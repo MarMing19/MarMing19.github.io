@@ -99,13 +99,17 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="#" title="GitHub" target="_blank"><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/MarMing19" title="GitHub" target="_blank"><i class="icon-github"></i></a>
 				
 					<a class="gitee" href="#" title="码云" target="_blank"><i class="icon-gitee"></i></a>
 				
 					<a class="jianshu" href="#" title="简书" target="_blank"><i class="icon-jianshu"></i></a>
 				
 					<a class="cnblog" href="#" title="博客园" target="_blank"><i class="icon-cnblog"></i></a>
+				
+					<a class="qq" href="/331503476" title="QQ" target="_blank"><i class="icon-qq"></i></a>
+				
+					<a class="email" href="/331503476@qq.com" title="subNav.title.email" target="_blank"><i class="icon-email"></i></a>
 				
 			</div>
 		
@@ -118,9 +122,9 @@
       
       
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
+         target="_blank"><!-- href="https://github.com/JoeyBling/hexo-theme-yilia-plus" -->
         <img src="/img/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+          class="attachment-full size-full" alt="22222Fork me on GitHub" data-recalc-dims="1"></a>
       
       
 <nav id="mobile-nav">
@@ -152,13 +156,17 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/MarMing19" title="GitHub"><i class="icon-github"></i></a>
 			        
 						<a class="gitee" target="_blank" href="#" title="码云"><i class="icon-gitee"></i></a>
 			        
 						<a class="jianshu" target="_blank" href="#" title="简书"><i class="icon-jianshu"></i></a>
 			        
 						<a class="cnblog" target="_blank" href="#" title="博客园"><i class="icon-cnblog"></i></a>
+			        
+						<a class="qq" target="_blank" href="/331503476" title="QQ"><i class="icon-qq"></i></a>
+			        
+						<a class="email" target="_blank" href="/331503476@qq.com" title="subNav.title.email"><i class="icon-email"></i></a>
 			        
 				</div>
 			</nav>
@@ -425,23 +433,6 @@
 
 <!--  -->
 
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
-
 
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
@@ -552,38 +543,11 @@
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" class="search-title" >
+              <a href="https://github.com/MarMing19" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
                 GitHub
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                CSDN
               </a>
             </li>
           
@@ -684,6 +648,16 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+  
+  <script type="text/javascript" src="/lib/snow.js"></script>
+  <script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
   
 </body>
 
