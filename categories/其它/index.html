@@ -69,11 +69,11 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" >主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" rel="noopener" >技术笔记</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" >随笔</a></li>
 			
 			</ul>
 		</nav>
@@ -95,17 +95,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="https://github.com/MarMing19" title="GitHub" target="_blank"><i class="icon-github"></i></a>
+					<a class="github" href="#" title="GitHub" ><i class="icon-github"></i></a>
 				
-					<a class="gitee" href="#" title="码云" target="_blank"><i class="icon-gitee"></i></a>
+					<a class="gitee" href="#" title="码云" ><i class="icon-gitee"></i></a>
 				
-					<a class="jianshu" href="#" title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+					<a class="jianshu" href="#" title="简书" ><i class="icon-jianshu"></i></a>
 				
-					<a class="cnblog" href="#" title="博客园" target="_blank"><i class="icon-cnblog"></i></a>
-				
-					<a class="qq" href="/331503476" title="QQ" target="_blank"><i class="icon-qq"></i></a>
-				
-					<a class="email" href="/331503476@qq.com" title="subNav.title.email" target="_blank"><i class="icon-email"></i></a>
+					<a class="cnblog" href="#" title="博客园" ><i class="icon-cnblog"></i></a>
 				
 			</div>
 		
@@ -152,17 +148,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/MarMing19" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
 			        
 						<a class="gitee" target="_blank" href="#" title="码云"><i class="icon-gitee"></i></a>
 			        
 						<a class="jianshu" target="_blank" href="#" title="简书"><i class="icon-jianshu"></i></a>
 			        
 						<a class="cnblog" target="_blank" href="#" title="博客园"><i class="icon-cnblog"></i></a>
-			        
-						<a class="qq" target="_blank" href="/331503476" title="QQ"><i class="icon-qq"></i></a>
-			        
-						<a class="email" target="_blank" href="/331503476@qq.com" title="subNav.title.email"><i class="icon-email"></i></a>
 			        
 				</div>
 			</nav>
@@ -218,8 +210,8 @@
   
     <h1 itemprop="name">
 	
-	  <a class="archive-article-title" href="/2020/05/28/hello-world/" target="_blank">Hello World</a>
-  
+	  <a class="archive-article-title" href="/2020/05/28/hello-world/">Hello World</a>
+	
     </h1>
   
 
@@ -259,7 +251,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="http://yoursite.com/" target="_blank">Mar_明</a>
+    		&copy; 2020 <a href="http://yoursite.com/" target="_blank">Mar_明</a>
     	</div>
       	<div class="footer-right">
 			
@@ -294,7 +286,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: true,
-		open_in_new: true,
+		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -359,6 +351,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">categories</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -515,7 +511,7 @@
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
   POWERMODE.colorful = true; // make power mode colorful
-  POWERMODE.shake = false; // turn off shake
+  POWERMODE.shake = true; // turn off shake
   document.body.addEventListener('input', POWERMODE);
 </script>
 
