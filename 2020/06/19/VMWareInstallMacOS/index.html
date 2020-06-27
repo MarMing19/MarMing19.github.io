@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://marming19.github.io">
   <title>记录下Windows使用VMware搭建MacOS系统的过程 | Mar_明的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,18 +13,32 @@
   <meta name="description" content="工具准备 VMware 下载地址：https:&#x2F;&#x2F;www.vmware.com&#x2F;cn&#x2F;products&#x2F;workstation-pro&#x2F;workstation-pro-evaluation.html  MacOS镜像(dmg) 下载地址1：https:&#x2F;&#x2F;blog.daliansky.net&#x2F; （黑果小兵） 下载地址2：https:&#x2F;&#x2F;www.applex.net&#x2F;pages&#x2F;macos&#x2F; （极限">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录下Windows使用VMware搭建MacOS系统的过程">
-<meta property="og:url" content="http://yoursite.com/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/index.html">
+<meta property="og:url" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/index.html">
 <meta property="og:site_name" content="Mar_明的博客">
 <meta property="og:description" content="工具准备 VMware 下载地址：https:&#x2F;&#x2F;www.vmware.com&#x2F;cn&#x2F;products&#x2F;workstation-pro&#x2F;workstation-pro-evaluation.html  MacOS镜像(dmg) 下载地址1：https:&#x2F;&#x2F;blog.daliansky.net&#x2F; （黑果小兵） 下载地址2：https:&#x2F;&#x2F;www.applex.net&#x2F;pages&#x2F;macos&#x2F; （极限">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/image-2.jpg">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-1.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-2.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-3.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-4.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-5.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-6.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-7.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-8.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-9.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-10.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-11.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-12.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-13.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-14.png">
+<meta property="og:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-15.png">
 <meta property="article:published_time" content="2020-06-19T07:25:11.000Z">
-<meta property="article:modified_time" content="2020-06-19T07:39:47.702Z">
-<meta property="article:author" content="Mar_明&#39;Blog">
+<meta property="article:modified_time" content="2020-06-27T14:57:23.275Z">
+<meta property="article:author" content="Mar_明">
 <meta property="article:tag" content="MacOS">
 <meta property="article:tag" content="VMware">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/image-2.jpg">
+<meta name="twitter:image" content="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/image-1.png">
   
     <link rel="alternative" href="/atom.xml" title="Mar_明的博客" type="application/atom+xml">
   
@@ -70,7 +84,7 @@
 			<img src="/img/head.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-			<h1 class="header-author"><a href="/">Mar_明&#39;Blog</a></h1>
+			<h1 class="header-author"><a href="/">Mar_明</a></h1>
 		</hgroup>
 		
 
@@ -103,13 +117,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="#" title="GitHub" ><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/MarMing19" target="_blank" rel="noopener" title="GitHub" ><i class="icon-github"></i></a>
 				
-					<a class="gitee" href="#" title="码云" ><i class="icon-gitee"></i></a>
+					<a class="kanxue" href="https://passport.kanxue.com/user-center-846065.htm" target="_blank" rel="noopener" title="subNav.title.kanxue" ><i class="icon-kanxue"></i></a>
 				
 					<a class="jianshu" href="#" title="简书" ><i class="icon-jianshu"></i></a>
 				
-					<a class="cnblog" href="#" title="博客园" ><i class="icon-cnblog"></i></a>
+					<a class="mail" href="mailto:331503476@qq.com" title="NULL" ><i class="icon-mail"></i></a>
 				
 			</div>
 		
@@ -140,7 +154,7 @@
 				</a>
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Mar_明&#39;Blog</h1>
+			  <h1 class="header-author js-header-author">Mar_明</h1>
 			</hgroup>
 			
 			
@@ -156,13 +170,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/MarMing19" title="GitHub"><i class="icon-github"></i></a>
 			        
-						<a class="gitee" target="_blank" href="#" title="码云"><i class="icon-gitee"></i></a>
+						<a class="kanxue" target="_blank" href="https://passport.kanxue.com/user-center-846065.htm" title="subNav.title.kanxue"><i class="icon-kanxue"></i></a>
 			        
 						<a class="jianshu" target="_blank" href="#" title="简书"><i class="icon-jianshu"></i></a>
 			        
-						<a class="cnblog" target="_blank" href="#" title="博客园"><i class="icon-cnblog"></i></a>
+						<a class="mail" target="_blank" href="mailto:331503476@qq.com" title="NULL"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -191,7 +205,7 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-记录下Windows使用VMware搭建MacOS系统的过程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-VMWareInstallMacOS" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -210,7 +224,7 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/" class="archive-article-date">
+<a href="/2020/06/19/VMWareInstallMacOS/" class="archive-article-date">
         <time datetime="2020-06-19T07:25:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-19</time>
 </a>
 
@@ -224,7 +238,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">168字</span>
+      <span class="post-count">415字</span>
     </span>
   </span>
 
@@ -264,8 +278,39 @@
 </ul>
 <h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>安装VMware这里不详细说。</p>
 <h3 id="使用unlocker解锁VMware"><a href="#使用unlocker解锁VMware" class="headerlink" title="使用unlocker解锁VMware"></a>使用unlocker解锁VMware</h3><p>第一步打开任务管理器</p>
-<p><img src="/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/image-2.jpg" alt></p>
-<p>第二步</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-1.png" alt="image-1"></p>
+<p>第二步切换到服务窗口，关闭所有VMWare的服务。</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-2.png" alt="image-2"></p>
+<p>第三步管理员身份运行unlocker工具，解锁虚拟机</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-3.png" alt="image-3"></p>
+<p>第四步打开虚拟机确认是否解锁成功，如果在新建虚拟机时，选择操作系统中存在apple mac OS选项，说明解锁成功。</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-4.png" alt="image-4"></p>
+<h3 id="Transmac工具制作镜像"><a href="#Transmac工具制作镜像" class="headerlink" title="Transmac工具制作镜像"></a>Transmac工具制作镜像</h3><p>打开工具选择要制作镜像的U盘</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-5.png" alt="image-5"></p>
+<p>修改U盘为Mac格式的分区</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-6.png" alt="image-6"></p>
+<p>烧制镜像</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-7.png" alt="image-7"></p>
+<p>选择下载好的dmg文件</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-8.png" alt="image-8"></p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-9.png" alt="image-9"></p>
+<p>进度条走完就制作完成了。</p>
+<h3 id="VMWare设置U盘制作系统"><a href="#VMWare设置U盘制作系统" class="headerlink" title="VMWare设置U盘制作系统"></a>VMWare设置U盘制作系统</h3><p>创建完虚拟机，首先要去虚拟机安装目录下修改配置文件如下</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-10.png" alt="image-10"></p>
+<p>编辑虚拟机，添加一个新的硬盘</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-11.png" alt="image-11"></p>
+<img src="/2020/06/19/VMWareInstallMacOS/image-12.png" alt="image-12" style="zoom:200%;">
+
+<p>这里注意下选择使用物理磁盘</p>
+<img src="/2020/06/19/VMWareInstallMacOS/image-13.png" alt="image-13" style="zoom:200%;">
+
+<p>选择U盘</p>
+<img src="/2020/06/19/VMWareInstallMacOS/image-14.png" alt="image-14" style="zoom:200%;">
+
+<p>当完成后就发现虚拟机直接使用新建硬盘进行启动。</p>
+<p><img src="/2020/06/19/VMWareInstallMacOS/image-15.png" alt="image-15"></p>
+<p>到此设置完成，后面的安装过程看下面这个链接就可以</p>
+<p><a href="https://www.jianshu.com/p/a04ddf269882" target="_blank" rel="noopener">https://www.jianshu.com/p/a04ddf269882</a></p>
 <h2 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h2><p>1.使用dmg2iso、dmg2img 工具将dmg镜像转换程iso镜像，实测没有卵用。<br>2.使用软碟通将dmg文件转换成iso镜像，也是没有用。</p>
 
     
@@ -309,11 +354,11 @@
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
-          Mar_明&#39;Blog
+          Mar_明
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://yoursite.com/2020/06/19/记录下Windows使用VMware搭建MacOS系统的过程/" title="记录下Windows使用VMware搭建MacOS系统的过程" target="_blank">http://yoursite.com/2020/06/19/记录下Windows使用VMware搭建MacOS系统的过程/</a>
+          <a href="https://marming19.github.io/2020/06/19/VMWareInstallMacOS/" title="记录下Windows使用VMware搭建MacOS系统的过程" target="_blank">https://marming19.github.io/2020/06/19/VMWareInstallMacOS/</a>
         </li>
         
         <li>
@@ -406,7 +451,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/19/%E8%AE%B0%E5%BD%95%E4%B8%8BWindows%E4%BD%BF%E7%94%A8VMware%E6%90%AD%E5%BB%BAMacOS%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%87%E7%A8%8B/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://marming19.github.io/2020/06/19/VMWareInstallMacOS/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -466,7 +511,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 <a href="http://yoursite.com/" target="_blank">Mar_明&#39;Blog</a>
+    		&copy; 2020 <a href="https://marming19.github.io/" target="_blank">Mar_明</a>
     	</div>
       	<div class="footer-right">
 			
@@ -663,7 +708,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">把努力当成一种习惯，而不是三分钟热度。<br>坚持才是王道，每一个你羡慕的收获，<br>都是别人努力用心拼来的，你可以抱怨，<br>也可以无视，但记住，不努力，<br>连认输的资格都没有！</div>
   	  	
     	</section>
     
